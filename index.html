@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sara Sørensen's CV website for front-end development, get to know me!" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sintony:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>Sara Sørensen CV</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar" id="navbar">
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div  role="navigation" class="navbar-links">
+                <ul class="nav navbar-nav">
+                    <li class="link"><a href="#about">About Me</a></li>
+                    <li class="link"><a href="#resume">Resume</a></li>
+                    <li class="link"><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <hr class="line">
+
+    <section class="mainContainer">
+        <article class="mainText">
+            <h1>Sara Sørensen</h1>
+            <h2>Front-end developer</h2>
+            <p class="pageDes">Studying the technology where visual design meets coding</p>
+            <button role="button" id="CTA" class="CTA">Hire Me</button>  </a>
+            <button role="button" id="CTA2" class="CTA2">See more</button>
+        </article>
+        <img class="avatar" src="images/avatar.png" alt="An avatar illustration of a woman">
+    </section>
+
+    <section id="about" class="containerAbout">
+        <article class="aboutContent">
+
+            <p class="brand-about">Age 23</p>
+            <p class="brand-about">email sarasorensen97@hotmail.com</p>
+
+            <p>I'm currently studying to become a Front-end Developer, at Noroff School of
+                technology and digital media. We just started our 2nd year, and I will graduate March 2021.</p>
+
+            <p>As I graduate I will be a trained frontend developer with the knowledge, skills and
+                expertise needed to develop and produce user-oriented solutions and services for web and mobile
+                devices.</p>
+        </article>
+        <div class="socials">
+           <a href="mailto:sarasorensen97@hotmail.com"> <img class="icon" src="images/mail.png" alt="An icon of mail"></a>
+           <a href="https://github.com/sarasorensen">  <img class="icon" src="images/github.png" alt="An icon of github logo"></a>
+           <a href="https://www.facebook.com/saramorksorensen/">  <img class="icon" src="images/fb.png" alt="An icon of facebook logo"></a>
+        </div>
+    </section>
+
+    <div class="eventsRow">
+
+        <div id="resume" class="eventHe">
+            <h2>Resume</h2>
+        </div>
+
+
+        <section class="col-">
+            <h3 class="heading">skills</h3>
+            <ul class="list">
+                <li>Web and coding</li>
+                <li>UX Design</li>
+                <li>Graphic Design</li>
+                <li>Hobby Photography</li>
+            </ul>
+        </section>
+
+
+        <section class="col-">
+            <h3 class="heading">education</h3>
+            <ul class="list">
+                <li><span class="bold">Mar 2019 - Mar 2021</span></li>
+                <li>Front-end Development</li>
+                <li><span class="bold">Aug 2013 - June 2016</span></li>
+                <li>Media & Communication </li>
+            </ul>
+        </section>
+
+
+        <section class="col-1">
+            <h3 class="heading">Courses</h3>
+            <ul class="list">
+                <li>Education First Language Course</li>
+                <li>Safety fire training</li>
+            </ul>
+        </section>
+
+    </div>
+
+    </div>
+
+
+    <div class="gallery">
+        <div id="gallery" class="eventHe">
+            <h2>Gallery</h2>
+        </div>
+
+        <div class="row">
+            <div class="columnGa">
+                <img src="images/dogSaraSørensen.jpg" alt="A dog almost sleeping" onclick="imageRow(this);">
+                <img src="images/amsterdamRiver.JPG" alt="A frozen river" onclick="imageRow(this);">
+                <img src="images/amsterdamMarket.JPG" alt="A food market" onclick="imageRow(this);">
+                <img src="images/pisa.jpg" alt="buildings by a river in Pisa" onclick="imageRow(this);">
+                <img src="images/butterfly.jpg" alt="A butterfly surrounded by flowers" onclick="imageRow(this);">
+                <img src="images/beach.jpg" alt="a man in black on a beach" onclick="imageRow(this);">
+                <img src="images/dog.jpg" alt="a rottweiler playing with a stick" onclick="imageRow(this);">
+                <img src="images/river.jpg" alt="a river in Amsterdam" onclick="imageRow(this);">
+                <img src="images/sand.jpg" alt="a blue ocean and mountains" onclick="imageRow(this);">
+                <img src="images/snow.jpg" alt="snowy mountains with a blue sky" onclick="imageRow(this);">
+                <img src="images/spainSunset.jpg" alt="a sun going down on a highway" onclick="imageRow(this);">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" alt="" class="expandedImg">
+        </div>
+
+        <button style="display: none;" id="topButton" class="topButton" type="button" title="Go to top">&uarr;</button>
+
+        <footer>
+
+            <div class="footer-container">
+                <h2 class="brand-title-footer">Sara Sørensen</h2>
+                <p>A creative front-end developer.</p>
+                <p>For inquiries contact me at sarasorensen97@hotmail.com</p>
+            </div>
+
+            <div class="column">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-copyright">
+                <p class="design">&copy; Web design by Sara Sørensen</p>
+            </div>
+        </footer>
+        <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
