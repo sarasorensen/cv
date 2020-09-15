@@ -32,6 +32,17 @@ window.onscroll = function () {
   }
 };
 
+//Back to top button
+function topButtonFunction() {
+  let body = document.body;
+  let html = document.documentElement;
+  body.scrollTop = 0;
+  html.scrollTop = 0;
+}
+
+const topBtn = document.getElementById("topButton");
+topBtn.addEventListener("click", topButtonFunction);
+
 let btn = document.getElementById("CTA");
 
 btn.addEventListener("click", function () {
@@ -45,19 +56,28 @@ button.addEventListener("click", function (e) {
   e.stopPropagation();
 });
 
-//Display for bigger image
-function imageRow(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  expandImg.src = imgs.src;
-  expandImg.parentElement.style.display = "block";
-}
-//Back to top button
-const topBtn = document.getElementById("topButton");
-topBtn.addEventListener("click", topButtonFunction);
+const expandImg = document.getElementById("expandedImg");
+const container = document.getElementById("container");
+var expandtext = document.getElementById("expandedText");
 
-function topButtonFunction() {
-  let body = document.body;
-  let html = document.documentElement;
-  body.scrollTop = 0;
-  html.scrollTop = 0;
-}
+var img1 = document.getElementById("got");
+var img2 = document.getElementById("space");
+const attribute = img1.getAttribute("data-attribute");
+
+img1.onclick = function () {
+  expandImg.parentElement.style.display = "block";
+  expandImg.src = img1.src;
+  expandtext.innerHTML = attribute;
+};
+
+img2.onclick = function () {
+  expandImg.parentElement.style.display = "block";
+  expandImg.src = img1.src;
+  expandtext.innerHTML = attribute;
+};
+
+window.addEventListener("click", function (event) {
+  if (event.target == container) {
+    container.style.display = "none";
+  }
+});

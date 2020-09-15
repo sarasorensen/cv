@@ -32,7 +32,7 @@
                 <ul class="nav navbar-nav">
                     <li class="link"><a href="#about">About Me</a></li>
                     <li class="link"><a href="#resume">Resume</a></li>
-                    <li class="link"><a href="#gallery">Gallery</a></li>
+                    <li class="link"><a href="#projects">Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -114,30 +114,25 @@
 
 
     <div class="gallery">
-        <div id="gallery" class="eventHe">
-            <h2>Gallery</h2>
+        <div id="projects" class="eventHe">
+            <h2>Projects</h2>
         </div>
 
         <div class="row">
             <div class="columnGa">
-                <img src="images/dogSaraSørensen.jpg" alt="A dog almost sleeping" onclick="imageRow(this);">
-                <img src="images/amsterdamRiver.JPG" alt="A frozen river" onclick="imageRow(this);">
-                <img src="images/amsterdamMarket.JPG" alt="A food market" onclick="imageRow(this);">
-                <img src="images/pisa.jpg" alt="buildings by a river in Pisa" onclick="imageRow(this);">
-                <img src="images/butterfly.jpg" alt="A butterfly surrounded by flowers" onclick="imageRow(this);">
-                <img src="images/beach.jpg" alt="a man in black on a beach" onclick="imageRow(this);">
-                <img src="images/dog.jpg" alt="a rottweiler playing with a stick" onclick="imageRow(this);">
-                <img src="images/river.jpg" alt="a river in Amsterdam" onclick="imageRow(this);">
-                <img src="images/sand.jpg" alt="a blue ocean and mountains" onclick="imageRow(this);">
-                <img src="images/snow.jpg" alt="snowy mountains with a blue sky" onclick="imageRow(this);">
-                <img src="images/spainSunset.jpg" alt="a sun going down on a highway" onclick="imageRow(this);">
+                <img id="got" src="images/got.png" alt="A website" data-attribute="http://sarasorensen.com/2020-09-13-semesterproject2-saras%C3%B8rensen%20-kopi/index.html">
+                <img id="space" src="images/space.png" alt="A website" data-attribute="http://sarasorensen.com/examFebruary/index.html">
+ 
             </div>
         </div>
 
 
-        <div class="container">
+        <div id="container" class="container">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <img id="expandedImg" alt="" class="expandedImg">
+            <img id="expandedImg"  class="expandedImg">
+            <div id="expandedText" class="expandedText"> 
+          
+            </div>
         </div>
 
         <button style="display: none;" id="topButton" class="topButton" type="button" title="Go to top">&uarr;</button>
