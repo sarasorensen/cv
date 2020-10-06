@@ -44,9 +44,11 @@
   transition: 0.2s;
   transition-timing-function: ease-in-out;
 }
+
 .navbar-links li a:hover {
   cursor: pointer;
   opacity: 1;
+  color: #c47f65;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
 }

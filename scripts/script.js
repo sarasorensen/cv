@@ -25,7 +25,7 @@ window.onscroll = function () {
     document.documentElement.scrollTop >= 80
   ) {
     myNav.classList.add("scroll");
-    topBtn.style.display = "block";
+    topBtn.style.display = "none";
   } else {
     myNav.classList.remove("scroll");
     topBtn.style.display = "none";
@@ -56,28 +56,41 @@ button.addEventListener("click", function (e) {
   e.stopPropagation();
 });
 
-const expandImg = document.getElementById("expandedImg");
-const container = document.getElementById("container");
-var expandtext = document.getElementById("expandedText");
+//open links in new tab
+function NewTab(url) {
+  var win = window.open(url, "_blank");
 
-var img1 = document.getElementById("got");
-var img2 = document.getElementById("space");
-const attribute = img1.getAttribute("data-attribute");
+  win.focus();
+}
 
-img1.onclick = function () {
-  expandImg.parentElement.style.display = "block";
-  expandImg.src = img1.src;
-  expandtext.innerHTML = attribute;
-};
+const projects = [
+  {
+    link:
+      "http://sarasorensen.com/2020-09-13-semesterproject2-saras%C3%B8rensen%20-kopi/index.html",
+    src: "images/got.png",
+    alt: "A website",
+    id: "got",
+  },
+  {
+    link: "http://sarasorensen.com/examFebruary/index.html",
+    src: "images/space.png",
+    alt: "A website",
+    id: "space",
+  },
+];
 
-img2.onclick = function () {
-  expandImg.parentElement.style.display = "block";
-  expandImg.src = img1.src;
-  expandtext.innerHTML = attribute;
-};
+var displayProject = document.querySelector(".columnGa");
 
-window.addEventListener("click", function (event) {
-  if (event.target == container) {
-    container.style.display = "none";
-  }
-});
+function render() {
+  displayProject.innerHTML = "";
+
+  projects.forEach(function (object) {
+    displayProject.innerHTML += `
+                                  <div class="flex-box">
+                                  <img class="img-project" src=${object.src} alt=${object.alt} id=${object.id}>
+                                  <button type="button" class="projectBtn" onclick="NewTab(('${object.link}'))"> View Page </button>
+                                  </div>`;
+  });
+}
+
+render();

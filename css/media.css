@@ -22,52 +22,26 @@
   .navbar-links.active {
     display: flex;
   }
-
-  .mainContainer {
-    width: 100%;
+  h1 {
+    width: 5%;
   }
-  .scroll {
+  .avatar {
     display: none;
   }
+  .mainText {
+    width: 95%;
+    margin-left: 5%;
+  }
   .CTA {
-    width: 60%;
+    width: 100%;
+  }
+  .CTA2 {
+    width: 100%;
   }
   .aboutText {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .lineDark {
-    display: none;
-  }
-  .col- {
-    width: 90%;
-    margin-left: 1em;
-  }
-  .col-1 {
-    width: 90%;
-    margin-left: 1em;
-  }
-  .column ul {
-    display: block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  .brand-title-footer {
-    text-align: center;
-  }
-  .topButton {
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0.5em 0.5em 0;
-    border-radius: 50%;
-    padding: 0.1em;
-    width: 40px;
-    height: 40px;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 480px) {
@@ -96,52 +70,27 @@
   .mainContainer {
     width: 100%;
   }
-  .scroll {
-    display: none;
-  }
   .pageDes {
     margin-left: 1em;
     margin-right: 1em;
   }
+  .avatar {
+    display: none;
+  }
+  .mainText {
+    width: 95%;
+    margin-left: 5%;
+  }
   .CTA {
-    width: 60%;
+    width: 100%;
+  }
+  .CTA2 {
+    width: 100%;
   }
   .aboutContent {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .lineDark {
-    display: none;
-  }
-  .col- {
-    width: 90%;
-    margin-left: 1em;
-  }
-  .col-1 {
-    width: 90%;
-    margin-left: 1em;
-  }
-  .column ul {
-    display: block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  .brand-title-footer {
-    text-align: center;
-  }
-  .topButton {
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0.5em 0.5em 0;
-    border-radius: 50%;
-    padding: 0.1em;
-    width: 40px;
-    height: 40px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 595px) {
@@ -167,30 +116,23 @@
   .navbar-links.active {
     display: flex;
   }
-  .scroll {
+  .avatar {
     display: none;
   }
-  .lineDark {
-    display: none;
+  .mainText {
+    width: 95%;
+    margin-left: 5%;
   }
   .CTA {
-    width: 50%;
+    width: 100%;
+  }
+  .CTA2 {
+    width: 100%;
   }
   .aboutContent {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .lineDark {
-    display: none;
-  }
-  .col- {
-    width: 90%;
-    margin-left: 1em;
-  }
-  .col-1 {
-    width: 90%;
-    margin-left: 1em;
   }
 }
 @media only screen and (min-width: 595px) and (max-width: 690px) {
@@ -217,30 +159,21 @@
   .navbar-links.active {
     display: flex;
   }
-  .scroll {
-    display: none;
-  }
-  .lineDark {
-    display: none;
+  .mainText {
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .CTA {
-    width: 40%;
+    width: 100%;
+  }
+  .CTA2 {
+    width: 100%;
   }
   .aboutContent {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .lineDark {
-    display: none;
-  }
-  .col- {
-    width: 90%;
-    margin-left: 1em;
-  }
-  .col-1 {
-    width: 90%;
-    margin-left: 1em;
   }
 }
 @media only screen and (min-width: 690px) and (max-width: 800px) {
@@ -276,19 +209,16 @@
   .navbar-links li a:hover {
     cursor: pointer;
   }
-  .scroll {
-    display: none;
+  .mainText {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .lineDark {
-    display: none;
+  .CTA {
+    min-width: 50%;
   }
-  .col- {
-    width: 90%;
-    margin-left: 1em;
-  }
-  .col-1 {
-    width: 90%;
-    margin-left: 1em;
+  .CTA2 {
+    min-width: 50%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -314,21 +244,31 @@
   .navbar-links.active {
     display: flex;
   }
-  .scroll {
-    display: none;
+
+  .mainText {
+    width: 40%;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .lineDark {
-    display: none;
+  .CTA {
+    min-width: 50%;
   }
-  .col- {
-    width: 45%;
-    margin-left: 1em;
+  .CTA2 {
+    min-width: 50%;
   }
-  .col-1 {
-    width: 35%;
+  .flex-item {
+    flex: none;
+    width: 10%;
+  }
+  .flex-box {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .mainText {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .footer-top {
     width: 100%;
     text-align: right;
